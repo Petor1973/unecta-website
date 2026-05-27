@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 280" width="320" height="280">
+  <defs></defs>
+  <g transform="translate(116 16)">
+    <path d="M 0 8 L 0 60 A 44 44 0 0 0 88 60 L 88 8" fill="none" stroke="#0F1A33" stroke-width="16" stroke-linecap="square"></path>
+    <circle cx="96" cy="100" r="9" fill="#2A6FDB"></circle>
+  </g>
+  <text x="160" y="206" text-anchor="middle" font-family="Manrope, system-ui, sans-serif" font-weight="800" font-size="56" letter-spacing="-2" fill="#0F1A33">unecta</text>
+  <text x="160" y="240" text-anchor="middle" font-family="&#39;JetBrains Mono&#39;, ui-monospace, monospace" font-weight="500" font-size="12" letter-spacing="3.6" fill="#0F1A33" fill-opacity="0.55">CLUB  TEAM  PLAY</text>
+</svg>

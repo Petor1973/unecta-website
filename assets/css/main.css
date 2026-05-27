@@ -1,26 +1,28 @@
 /* ═══════════════════════════════════════════════════════
    UNECTA — main.css
-   Kleuren via CSS-variabelen → swap brandpakket in :root
+   Brand: Ink #0F1A33 · Blue #2A6FDB · Cream #F6F4EF
+   Font:  Manrope 800 + JetBrains Mono 500
    ═══════════════════════════════════════════════════════ */
 
 :root {
-  /* Brand — placeholder tot brandpakket beschikbaar is */
-  --color-primary:       #1e3a5f;
-  --color-primary-light: #2d5a9e;
-  --color-accent:        #3b7dd8;
-  --color-accent-hover:  #2d6bc4;
+  /* Brand */
+  --color-primary:       #0F1A33;   /* Ink — hoofd */
+  --color-primary-light: #1a2d52;   /* Ink licht */
+  --color-accent:        #2A6FDB;   /* Blue */
+  --color-accent-hover:  #2260c4;   /* Blue donkerder */
+  --color-cream:         #F6F4EF;   /* Cream — achtergrond */
 
   /* Neutrals */
-  --color-dark:      #0f172a;
-  --color-body:      #334155;
-  --color-muted:     #64748b;
-  --color-border:    #e2e8f0;
-  --color-surface:   #f8fafc;
+  --color-dark:      #0F1A33;
+  --color-body:      #3a4a63;
+  --color-muted:     #6b7a94;
+  --color-border:    #e4e1d9;       /* Cream-tinted border */
+  --color-surface:   #F6F4EF;       /* Cream */
   --color-white:     #ffffff;
 
   /* Typography */
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --font-sans: 'Manrope', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
 
   /* Spacing */
   --radius-sm: 6px;
@@ -54,13 +56,13 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 /* ── Typography ─────────────────────────────────────────── */
 h1, h2, h3, h4 {
   color: var(--color-dark);
-  line-height: 1.2;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -0.035em;
 }
-h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); }
-h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); }
-h3 { font-size: 1.2rem; font-weight: 600; }
+h1 { font-size: clamp(2.4rem, 5vw, 3.8rem); }
+h2 { font-size: clamp(1.7rem, 3vw, 2.6rem); }
+h3 { font-size: 1.15rem; font-weight: 700; }
 p  { max-width: 65ch; }
 
 /* ── Layout ─────────────────────────────────────────────── */
@@ -93,24 +95,13 @@ section { padding: 6rem 0; }
   display: flex;
   align-items: center;
   gap: .5rem;
-  font-weight: 700;
-  font-size: 1.15rem;
+  font-weight: 800;
+  font-size: 1.2rem;
   color: var(--color-dark);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.04em;
 }
 
-.nav__logo-mark {
-  width: 28px;
-  height: 28px;
-  background: var(--color-primary);
-  border-radius: 7px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: .8rem;
-  font-weight: 800;
-}
+.nav__logo svg { flex-shrink: 0; }
 
 .nav__links {
   display: flex;
@@ -168,7 +159,7 @@ section { padding: 6rem 0; }
 .hero {
   padding: 7rem 0 6rem;
   text-align: center;
-  background: linear-gradient(180deg, var(--color-surface) 0%, var(--color-white) 100%);
+  background: linear-gradient(180deg, var(--color-cream) 0%, var(--color-white) 100%);
 }
 
 .hero__eyebrow {
